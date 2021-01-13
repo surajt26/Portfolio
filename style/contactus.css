@@ -1,0 +1,301 @@
+/*-------------------- Main_Container_Start -------------------- */
+.mainContainer {
+  width: 100vw;
+  height: 125px;
+  background-color: red;
+  background-image: linear-gradient(to right, rgb(128, 128, 255),rgb(0, 230, 230));
+  background-size: none;
+  background-attachment: none;
+}
+
+.mainContainer .navTitleName:hover {
+  color: #ffffff;
+}
+
+.mainContainer .navMenu li {
+  color: #ffffff;
+}
+
+.mainContainer .navMenu li:hover {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 800px) {
+  .mainContainer {
+    display: none;
+  }
+}
+/*-------------------- Main_Container_End -------------------- */
+
+/*-------------------- Contact_Us_Container_Start -------------------- */
+.contactUsContainer {
+  width: 100vw;
+  padding: 150px 0;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  box-shadow: 0px 1px 50px 50px rgb(0,0,0,.1);
+}
+
+.contactUsContainer .firstLine {
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  font-family: 'Russo One', sans-serif;
+  letter-spacing: 2px;
+}
+
+.contactUsContainer .secondLine {
+  width: 100%;
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: center;
+  color: #000000;
+}
+
+.contactUsContainer .secondLine a {
+  text-decoration: none;
+  color: #000000;
+  transition: ease .4s;
+  -moz-transition: ease .4s;
+  -o-transition: ease .4s;
+  -webkit-transition: ease .4s;
+}
+
+.contactUsContainer .secondLine a:hover {
+  color: #8080ff;
+}
+
+.contactUsContainer .secondLine img {
+  position: relative;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+}
+/*-------------------- Contact_Us_Container_End -------------------- */
+
+/*-------------------- Map_Container_Start -------------------- */
+.mapContainer {
+  width: 100vw;
+  padding: 120px 0 80px;
+}
+
+.mapContainer .map {
+  width: 80vw;
+  height: 420px;
+  margin: 0 10vw;
+  border: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .mapContainer .map {
+    width: 90vw;
+    margin: 0 5vw;
+  }
+}
+/*-------------------- Map_Container_End -------------------- */
+
+/*-------------------- Submission_Popup_Start -------------------- */
+.submissionContainer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.5);
+  z-index: 20;
+  overflow: hidden;
+  transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -webkit-transition: all .5s;
+}
+
+.submissionContainer .submissionBox {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  width: 500px;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.submissionContainer .submissionFirstLine {
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  color: #8080ff;
+}
+
+.submissionContainer .submissionSecondLine {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  color: rgba(0,0,0,.6);
+}
+
+@media only screen and (max-width: 500) {
+  .submissionContainer .submissionBox {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+/*-------------------- Submission_Popup_End -------------------- */
+
+/*-------------------- Form_Container_Start -------------------- */
+.formContainer {
+  width: 100vw;
+  padding: 0 0 125px;
+}
+
+.formContainer .formGridContainer {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 80%;
+  margin: 0 10vw;
+}
+
+.formContainer .gridBoxImg {
+  position: relative;
+  top: 11px;
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+
+.formContainer .gridBoxFirstLine {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.formContainer .gridBoxFirstLine a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.formContainer .gridBoxSecondLine {
+  margin: 4px 0 15px 44px;
+  font-size: 14px;
+  color: rgba(0,0,0,.7);
+}
+
+.formContainer .formGridBoxSecond {
+  display: flex;
+}
+
+.formContainer .formInput {
+  width: 47%;
+  margin-right: 6%;
+}
+
+.formContainer input[type=text] {
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 20px;
+  border: .1px solid rgba(0,0,0,.1);
+}
+
+.formContainer input[type=text]:not(:first-child) {
+  margin-top: 15px;
+}
+
+.formContainer input:focus {
+   outline: none;
+}
+
+.formContainer input::placeholder,
+.formContainer textarea::placeholder {
+  color: rgba(0,0,0,.5);
+}
+
+.formContainer .formGridBoxSecond p {
+  color: rgba(0,0,0,.7);
+}
+
+.formContainer .formTextArea {
+  width: 47%;
+}
+
+.formContainer textarea {
+  resize: none;
+  width: 100%;
+  padding: 10px 20px;
+  border: .1px solid rgba(0,0,0,.1);
+}
+
+.formContainer textarea:focus {
+  outline: none;
+}
+
+.formContainer .formSubmitButtonContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.formContainer .formSubmitButton {
+  float: right;
+  padding: 18px 50px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #8080ff;
+  border-radius: 5px;
+  border: 1px solid #8080ff;
+  cursor: pointer;
+  transition: ease .4s;
+  -moz-transition: ease .4s;
+  -o-transition: ease .4s;
+  -webkit-transition: ease .4s;
+}
+
+.formContainer .formSubmitButton:hover {
+  color: #8080ff;
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width: 1100px) {
+  .formContainer .formGridContainer {
+    grid-template-columns: 100%;
+    grid-template-rows: 200px auto;
+    row-gap: 50px;
+  }
+
+  .formContainer .formSubmitButtonContainer {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .formContainer .formGridContainer {
+    width: 90%;
+    margin: 0 5vw;
+  }
+
+  .formContainer .formSubmitButtonContainer {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .formContainer .formGridBoxSecond {
+    display: block;
+  }
+
+  .formContainer .formInput {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .formContainer .formTextArea {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+/*-------------------- Form_Container_End -------------------- */

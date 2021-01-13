@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-------------------- Head_Start -------------------->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../style/index.css">
+  <link rel="stylesheet" type="text/css" href="../style/menulogo.css">
+  <link rel="stylesheet" type="text/css" href="../style/contactus.css">
+  <link rel="icon" type="image/png" href="../image/ti-pt.png">
+  <title>Suraj KY | ContactUs</title>
+</head>
+<!-------------------- Head_End -------------------->
+
+<!-------------------- Body_Start -------------------->
+<body>
+
+  <!--------------------Window_Load_Container_Start -------------------->
+  <div id="windowLoadContainer">
+    <img src="../image/wd-lo.gif" alt="image">
+  </div>
+  <!--------------------Window_Load_Container_End -------------------->
+
+  <!-------------------- NavBar_Container_Start -------------------->
+  <div class="navBarContainer" id="navbar">
+    <a href="../index.html"><p class="navTitleName">MEETME</p></a>
+    <ul class="navMenu">
+      <a href="../index.html"><li>HOME</li></a>
+      <a href="../index.html#about"><li>ABOUT</li></a>
+      <a href="../index.html#work"><li>WORK</li></a>
+      <a href="../index.html#skill"><li>SKILL</li></a>
+      <a href="../index.html#project"><li>PROJECT</li></a>
+      <a href="#"><li>CONTACT</li></a>
+    </ul>
+    <div class="menu-btn" id="menuToggle" onclick="scrollOnOff()">
+      <div class="menu-btn__burger"></div>
+    </div>
+  </div>
+  <div class="menuPanel" id="panel">
+    <ul class="navMenu">
+      <a href="../index.html"><li>HOME</li></a>
+      <a href="../index.html#about"><li>ABOUT</li></a>
+      <a href="../index.html#work"><li>WORK</li></a>
+      <a href="../index.html#skill"><li>SKILL</li></a>
+      <a href="../index.html#project"><li>PROJECT</li></a>
+      <a href="#" id="contactOne" onclick="hideNavByCover()"><li class="lastLi">CONTACT</li></a>
+    </ul>
+  </div>
+  <!-------------------- NavBar_Container_End -------------------->
+
+  <!-------------------- NavBack_Container_Start -------------------->
+  <div class="navBackCover" id="navBackCover" onclick="hideNavByCover()"></div>
+  <!-------------------- NavBack_Container_End -------------------->
+
+  <!-------------------- Main_Container_Start -------------------->
+  <div class="mainContainer" id="home">
+    <div class="navContainer">
+      <a href="../index.html"><p class="navTitleName">MEETME</p></a>
+      <ul class="navMenu">
+        <a href="../index.html"><li>HOME</li></a>
+        <a href="../index.html#about"><li>ABOUT</li></a>
+        <a href="../index.html#work"><li>WORK</li></a>
+        <a href="../index.html#skill"><li>SKILL</li></a>
+        <a href="../index.html#project"><li>PROJECT</li></a>
+        <a href="#"><li>CONTACT</li></a>
+      </ul>
+    </div>
+  </div>
+  <!-------------------- Main_Container_End -------------------->
+
+  <!-------------------- Contact_Us_Start -------------------->
+  <div class="contactUsContainer">
+      <p class="firstLine">Contact Us</p>
+      <p class="secondLine">
+        <a href="../index.html">Home</a> &nbsp<img src="../image/ar-pt.png"> &nbsp
+        <a href="#">Contact Us</a>
+      </p>
+  </div>
+  <!-------------------- Contact_Us_End -------------------->
+
+  <!-------------------- Map_Container_Start -------------------->
+  <div class="mapContainer">
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7566.62086120472!2d73.92255528929506!3d18.514868765530473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c18d3fd3454d%3A0x38ae6b1008a0d0c4!2sMagarpatta%2C%20Hadapsar%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1608924847367!5m2!1sen!2sin" 
+      width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe>
+  </div>
+  <!-------------------- Map_Container_End -------------------->
+
+  <!-------------------- Submission_Popup_Start -------------------->
+  <div class="submissionContainer" id="submission">
+    <div class="submissionBox">
+      <p class="submissionFirstLine">Thank You</p>
+      <p class="submissionSecondLine">Your message is successfully sent...</p>
+    </div>
+  </div>
+  <!-------------------- Submission_Popup_End -------------------->
+
+  <!-------------------- Form_Container_Start -------------------->
+  <div class="formContainer">
+    <div class="formGridContainer">
+      <div>
+        <p class="gridBoxFirstLine">
+          <img src="../image/fr-hm.png" class="gridBoxImg">
+          Maharashtra, India
+        </p>
+        <p class="gridBoxSecondLine">Magarpatta City</p>
+        <p class="gridBoxFirstLine">
+          <img src="../image/fr-ca.png" class="gridBoxImg">
+          <a href="tel:+918305532529">+91 (830)-553-2529</a>
+        </p>
+        <p class="gridBoxSecondLine">Mon to Fri 9am to 6 pm</p>
+        <p class="gridBoxFirstLine">
+          <img src="../image/fr-me.png" class="gridBoxImg">
+          <a href="mailto:face.surajyadav@gmail.com">face.surajyadav@gamil.com</a>
+        </p>
+        <p class="gridBoxSecondLine">Send me your query anytime!</p>
+      </div>
+      <div class="formGridBoxSecond">
+        <div class="formInput">
+          <input id="formName" type="text" placeholder="Enter You Name" onkeydown="emptyCheckName()">
+          <p id="formNameAlert"></p>
+          <input id="formEmail" type="text" placeholder="Enter Email Address" onkeydown="emptyCheckEmail()">
+          <p id="formEmailAlert"></p>
+          <input id="formSubject" type="text" placeholder="Enter Subject" onkeydown="emptyCheckSubject()">
+          <p id="formSubjectAlert"></p>
+        </div>
+        <div class="formTextArea">
+          <textarea id="formMessage" rows="8" cols="50" placeholder="Enter Message" onkeydown="emptyCheckMessage()"></textarea>
+          <p id="formMessageAlert"></p>
+        </div>
+      </div>
+    </div>
+    <div class="formSubmitButtonContainer">
+      <p class="formSubmitButton" onclick="validationForm()">Send Message</p>
+    </div>
+
+    <script>
+      var formName, formEmail, formSubject, formMessage;
+
+      var formNameAlert = document.getElementById('formNameAlert');
+      var formEmailAlert = document.getElementById('formEmailAlert');
+      var formSubjectAlert = document.getElementById('formSubjectAlert');
+      var formMessageAlert = document.getElementById('formMessageAlert');
+      var formSubmission = document.getElementById('submission');
+
+      function validationForm() {
+        formName = document.getElementById("formName").value;
+        formEmail = document.getElementById("formEmail").value;
+        formSubject = document.getElementById("formSubject").value;
+        formMessage = document.getElementById("formMessage").value;
+
+        var emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        var submitCount = 0;
+      
+        /* Name Input */
+        if(formName == "") {
+          formNameAlert.innerHTML = "come on, you have a name, don't you?";
+        }
+        else {
+          formNameAlert.innerHTML = "";
+          submitCount = 1;
+        }
+
+        /* Email Input */
+       if(formEmail == "") {
+         formEmailAlert.innerHTML = "no email, no message";
+       } else if((formEmail.match(emailPattern)) && (formEmail != "")) {
+         formEmailAlert.innerHTML = "";
+          submitCount += 1;
+       } else {
+         formEmailAlert.innerHTML = "Please enter a valid email address.";
+       }
+       
+        /* Subject Input */
+        if(formSubject == "") {
+          formSubjectAlert.innerHTML = "come on, you have a subject, don't you?";
+        }
+        else {
+          formSubjectAlert.innerHTML = "";
+          submitCount += 1;
+        }
+        
+        /* Message Input */
+        if(formMessage == "") {
+          formMessageAlert.innerHTML = "um...yea, you have to write something to send this form.";
+        }
+        else if(formMessage.length < 21) {
+          formMessageAlert.innerHTML = "thats all? really?";
+        }
+        else {
+          formMessageAlert.innerHTML = "";
+          submitCount += 1;
+        }
+
+        if(submitCount == 4) {
+          setTimeout(function() {
+            formSubmission.style.display = "block";
+          },1000);
+          setTimeout(function() {
+            formSubmission.style.display = "none";
+            document.getElementById('formName').value = "";
+            document.getElementById('formEmail').value = "";
+            document.getElementById('formSubject').value = "";
+            document.getElementById('formMessage').value = "";
+          },5000);
+        }
+      }
+
+      function emptyCheckName() {
+        formNameAlert.innerHTML = "";
+      }
+
+      function emptyCheckEmail() {
+        formEmailAlert.innerHTML = "";
+      }
+
+      function emptyCheckSubject() {
+        formSubjectAlert.innerHTML = "";
+      }
+
+      function emptyCheckMessage() {
+        formMessageAlert.innerHTML = "";
+      }
+    </script>
+  </div>
+  <!-------------------- Form_Container_End -------------------->
+
+  <!-------------------- Footer_Start -------------------->
+  <footer>
+    <div class="footerGridContainer" id="contact">
+      <div>
+        <h3>About Me</h3><br><br>
+        <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,<br><br><br>
+          Copyright © 2020 Suraj KY - All Rights Reserved.</p>
+        <p class="lastLine">PORTFOLIO</p>
+      </div>
+      <div class="newsLetter">
+        <h3>Newsletter</h3><br><br>
+        <p>Stay updated with our latest trends</p>
+        <form onsubmit="validationEmail(); return false">
+          <input type="text" id="email" placeholder="Email Address" onkeydown="emptyCheck()">
+          <input type="submit" value="s">
+          <p class="validationText" id="validationText"></p>
+        </form>
+        <script>
+          var email;
+          var alertText;
+          function validationEmail() {
+            email = document.getElementById("email").value;
+            alertText = document.getElementById("validationText");
+            var pattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            if(email == "") {
+              alertText.innerHTML = "no email address, no submission";
+              alertText.style.color = "#8080ff";
+            }
+            else if(email.match(pattern) && email != "") {
+              alertText.innerHTML = "Wait for submission...";
+              alertText.style.color = "#8080ff";
+              document.getElementById("email").value = "";
+              setTimeout(function() {
+                alertText.innerHTML = "Your email address is submited.";
+              },2000);
+              setTimeout(function() {
+                alertText.innerHTML = "";
+              },4000);
+            } else {
+                alertText.innerHTML = "Please enter a valid email address.";
+                alertText.style.color = "red";
+              }
+          }
+          
+          function emptyCheck() {
+            alertText.innerHTML = "";
+          }
+        </script>
+        <div class="transperent">
+          <img src="../image/em-ar-pt.png">
+        </div>
+      </div>
+      <div>
+        <h3>Follow Me</h3><br><br>
+        <p>Lets us be social</p><br>
+        <a href="https://www.facebook.com/surajt26/" target="_blank" class="smallIcon">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 24 24" version="1.1">
+          <g id="surface40249886">
+          <path style=" stroke:none;fill-rule:nonzero;fill:rgb(94.901961%,94.901961%,94.901961%);fill-opacity:1;" d="M 17.523438 9 L 14 9 L 14 7 C 14 5.96875 14.085938 5.316406 15.5625 5.316406 L 17.429688 5.316406 L 17.429688 2.136719 C 16.523438 2.042969 15.609375 1.996094 14.691406 2 C 11.980469 2 10 3.65625 10 6.699219 L 10 9 L 7 9 L 7 13 L 10 13 L 10 22 L 14 22 L 14 12.996094 L 17.066406 12.996094 Z M 17.523438 9 "/>
+          </g>
+          </svg>
+        </a>
+        <a href="https://www.twitter.com/surajt26/" target="_blank" class="smallIcon">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 24 24" version="1.1">
+          <g id="surface40249193">
+          <path style=" stroke:none;fill-rule:nonzero;fill:rgb(94.901961%,94.901961%,94.901961%);fill-opacity:1;" d="M 24 4.300781 C 23.101562 4.699219 22.199219 5 21.199219 5.101562 C 22.199219 4.5 23 3.5 23.398438 2.398438 C 22.398438 3 21.398438 3.398438 20.300781 3.601562 C 19.300781 2.601562 18 2 16.601562 2 C 13.898438 2 11.699219 4.199219 11.699219 6.898438 C 11.699219 7.300781 11.699219 7.699219 11.800781 8 C 7.699219 7.800781 4.101562 5.898438 1.699219 2.898438 C 1.199219 3.601562 1 4.5 1 5.398438 C 1 7.101562 1.898438 8.601562 3.199219 9.5 C 2.398438 9.398438 1.601562 9.199219 1 8.898438 C 1 8.898438 1 8.898438 1 9 C 1 11.398438 2.699219 13.398438 4.898438 13.800781 C 4.5 13.898438 4.101562 14 3.601562 14 C 3.300781 14 3 14 2.699219 13.898438 C 3.300781 15.898438 5.101562 17.300781 7.300781 17.300781 C 5.601562 18.601562 3.5 19.398438 1.199219 19.398438 C 0.800781 19.398438 0.398438 19.398438 0 19.300781 C 2.199219 20.699219 4.800781 21.5 7.5 21.5 C 16.601562 21.5 21.5 14 21.5 7.5 C 21.5 7.300781 21.5 7.101562 21.5 6.898438 C 22.5 6.199219 23.300781 5.300781 24 4.300781 "/>
+          </g>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/surajt26/" target="_blank" class="smallIcon">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 24 24" version="1.1">
+          <g id="surface39224084">
+          <path style=" stroke:none;fill-rule:nonzero;fill:rgb(94.901961%,94.901961%,94.901961%);fill-opacity:1;" d="M 8.25 2.5 C 5.078125 2.5 2.5 5.078125 2.5 8.25 L 2.5 15.75 C 2.5 18.921875 5.078125 21.5 8.25 21.5 L 15.75 21.5 C 18.921875 21.5 21.5 18.921875 21.5 15.75 L 21.5 8.25 C 21.5 5.078125 18.921875 2.5 15.75 2.5 Z M 17 6 C 17.550781 6 18 6.449219 18 7 C 18 7.550781 17.550781 8 17 8 C 16.449219 8 16 7.550781 16 7 C 16 6.449219 16.449219 6 17 6 Z M 12 7 C 14.757812 7 17 9.242188 17 12 C 17 14.757812 14.757812 17 12 17 C 9.242188 17 7 14.757812 7 12 C 7 9.242188 9.242188 7 12 7 Z M 12 8.5 C 10.066406 8.5 8.5 10.066406 8.5 12 C 8.5 13.933594 10.066406 15.5 12 15.5 C 13.933594 15.5 15.5 13.933594 15.5 12 C 15.5 10.066406 13.933594 8.5 12 8.5 Z M 12 8.5 "/>
+          </g>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" class="smallIcon">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg class="smallIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 24 24" version="1.1">
+          <g id="surface40245549">
+          <path style=" stroke:none;fill-rule:nonzero;fill:rgb(94.901961%,94.901961%,94.901961%);fill-opacity:1;" d="M 21 5 C 21 5 18 4 12 4 C 6 4 3 5 3 5 C 3 5 2 8 2 12 C 2 16 3 19 3 19 C 3 19 6 20 12 20 C 18 20 21 19 21 19 C 21 19 22 16 22 12 C 22 8 21 5 21 5 Z M 10 15.464844 L 10 8.535156 L 16 12 Z M 10 15.464844 "/>
+          </g>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-------------------- Footer_End -------------------->
+  
+  <!-------------------- Script_Start -------------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../script/window-load.js"></script>
+  <script type="text/javascript" src="../script/nav-bar.js"></script>
+  <script type="text/javascript" src="../script/toggle-menu-logo.js"></script>
+  <script type="text/javascript" src="../jquery/nav-slider.js"></script>
+  <!-------------------- Script_Start -------------------->
+
+</body>
+<!-------------------- Body_End -------------------->
+
+</html>
